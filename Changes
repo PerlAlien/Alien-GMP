@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+1.06_02   2017-12-06 13:34:39-05:00 America/New_York (TRIAL RELEASE)
   - Fix bug introduced in 1.06_01 where install could fail on system
     build if C++ bindings are not available.
 
