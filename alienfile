@@ -60,11 +60,6 @@ sys {
         $build->runtime_prop->{alt}->{gmp}->{$_} = $build->runtime_prop->{$_} for qw( cflags libs );
         $build->runtime_prop->{alt}->{gmpxx}->{$_} = "-lgmpxx " for qw( libs );
       }
-      else
-      {
-        $build->log("cwd = @{[ `pwd` ]}");
-        die 'unable to find include/gmpxx.h!';
-      }
     },
   );
 };
