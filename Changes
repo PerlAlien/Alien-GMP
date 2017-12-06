@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+1.06_01   2017-12-06 11:41:31-05:00 America/New_York (TRIAL RELEASE)
   - Add support for C++ bindings via Alien::GMP->alt('gmpxx')
     Provided only if available.
 
