@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Fix bug introduced in 1.06_01 where install could fail on system
+    build if C++ bindings are not available.
 
 1.06_01   2017-12-06 11:41:31-05:00 America/New_York (TRIAL RELEASE)
   - Add support for C++ bindings via Alien::GMP->alt('gmpxx')
