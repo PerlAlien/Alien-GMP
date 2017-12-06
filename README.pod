@@ -62,7 +62,7 @@ to create a C++ instance of this GMP Alien.  For example:
  WriteMakefile(
    ...
    CONFIGURE_REQUIRES => {
-     'Alien::GMP' => '0',
+     'Alien::GMP' => '1.06', # require version that provides C++ bindings
    },
    CCFLAGS => Alien::GMP->alt('gmpxx')->cflags . " $Config{ccflags}",
    LIBS    => [ Alien::GMP->alt('gmpxx')->libs ],
