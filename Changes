@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Add support for C++ bindings via Alien::GMP->alt('gmpxx')
+    Provided only if available.
 
 1.05      2017-09-21 15:32:35-04:00 America/New_York
   - Support for system install of gmp on Solaris
