@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Production release identical to 1.06_02
 
 1.06_02   2017-12-06 13:34:39-05:00 America/New_York (TRIAL RELEASE)
   - Fix bug introduced in 1.06_01 where install could fail on system
