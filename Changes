@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Download .bz2 tarball instead of .gz
+    Starting with the 6.x.x series, gmp doesn't provide .tar.gz
+    anymore
 
 1.08      2018-03-08 02:23:26-05:00 America/New_York
   - Switch from ftp to http

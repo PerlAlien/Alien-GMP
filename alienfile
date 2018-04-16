@@ -19,10 +19,10 @@ EOM
 share {
   plugin Download => (
     url => 'http://ftp.gnu.org/gnu/gmp',
-    filter => qr/^gmp-.*\.tar\.gz$/,
+    filter => qr/^gmp-.*\.tar\.bz2$/,
     version => qr/([0-9\.]+)/,
   );
-  plugin Extract => 'tar.gz',
+  plugin Extract => 'tar.bz2',
   plugin 'Build::Autoconf' => ();
 
   build [
