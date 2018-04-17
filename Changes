@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Production release identical to 1.09_01
+
+1.09_01   2018-04-16 06:36:24-04:00 America/New_York (TRIAL RELEASE)
   - Download .bz2 tarball instead of .gz
     Starting with the 6.x.x series, gmp doesn't provide .tar.gz
     anymore
