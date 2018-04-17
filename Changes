@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+1.10      2018-04-17 10:22:10-04:00 America/New_York
   - Production release identical to 1.09_01
 
 1.09_01   2018-04-16 06:36:24-04:00 America/New_York (TRIAL RELEASE)
