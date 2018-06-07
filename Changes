@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Move to Perl5-Alien org
 
 1.10      2018-04-17 10:22:10-04:00 America/New_York
   - Production release identical to 1.09_01

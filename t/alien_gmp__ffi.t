@@ -6,15 +6,6 @@ skip_all 'test requires a dynamic build' unless Alien::GMP->dynamic_libs;
 
 alien_ok 'Alien::GMP';
 
-diag '';
-diag '';
-diag '';
-
-diag(sprintf("%20s = %s", 'dynamic_libs[]', $_)) for Alien::GMP->dynamic_libs;
-
-diag '';
-diag '';
-
 ffi_ok { symbols => [ '__gmpz_init_set_str', '__gmpz_mul' ] }, with_subtest {
   my($ffi) = @_;
   eval q{ require FFI::Platypus::Memory };
