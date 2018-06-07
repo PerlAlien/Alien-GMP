@@ -6,6 +6,12 @@ pod_spelling_system:
   stopwords:
     - libgmpxx
     - GMP
+    - Braswell
+    - Mughal
+    - RSIMOES
+    - WBRASWELL
+    - ZMUGHAL
+    - Zakariyya
 
 pod_coverage:
   skip: 0
