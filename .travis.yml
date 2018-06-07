@@ -3,7 +3,7 @@ sudo: false
 
 install:
   - perlbrew list
-  - cpanm -n Dist::Zilla App::af
+  - cpanm -n Dist::Zilla App::af FFI::Platypus
   - af missing | cpanm
   - dzil authordeps --missing | cpanm -n
   - dzil listdeps --missing   | cpanm -n
