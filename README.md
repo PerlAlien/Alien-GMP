@@ -73,10 +73,17 @@ This module supports [Inline's with functionality](https://metacpan.org/pod/Inli
 
 [GMP](https://gmplib.org/)
 
-# AUTHORS
+# AUTHOR
 
-- Richard Simões &lt;rsimoes AT cpan DOT org>
-- Graham Ollis <plicease@cpan.org>
+Original author: Richard Simões (RSIMOES)
+
+Current maintainer: Graham Ollis <plicease@cpan.org>
+
+Contributors:
+
+Zakariyya Mughal (ZMUGHAL)
+
+William N. Braswell, Jr. (WBRASWELL)
 
 # COPYRIGHT AND LICENSE
 
