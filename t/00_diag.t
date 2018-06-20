@@ -26,10 +26,15 @@ $modules{$_} = $_ for qw(
 $post_diag = sub {
   require Alien::GMP;
   diag "version        = ", Alien::GMP->config('version');
-  diag "cflags         = ", Alien::GMP->cflags;
-  diag "cflags_static  = ", Alien::GMP->cflags_static;
-  diag "libs           = ", Alien::GMP->libs;
-  diag "libs_static    = ", Alien::GMP->libs_static;
+  foreach my $alt (qw( gmp gmpxx foo ))
+  {
+    my $alien = eval { Alien::GMP->alt($alt) };
+    next unless $alien;
+    diag "$alt.cflags         = ", $alien->cflags;
+    diag "$alt.cflags_static  = ", $alien->cflags_static;
+    diag "$alt.libs           = ", $alien->libs;
+    diag "$alt.libs_static    = ", $alien->libs_static;
+  }
   diag "dynamic_libs   = $_" for Alien::GMP->dynamic_libs;
 };
 
