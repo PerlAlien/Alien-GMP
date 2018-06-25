@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Remove dependency on Alien::Role::Alt
+    This Role is no longer necessary, as the capability of that role
+    has been merged into the Alien::Build core.
 
 1.11      2018-06-07 14:28:04 -0400
   - Move to Perl5-Alien org
