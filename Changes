@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.14      2018-06-25 05:29:49 -0400
+  - Production release identical to 1.12_01
+
 1.12_01   2018-06-25 03:34:28 +0000
   - Remove dependency on Alien::Role::Alt
     This Role is no longer necessary, as the capability of that role
