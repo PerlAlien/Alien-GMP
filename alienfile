@@ -18,7 +18,7 @@ EOM
 
 share {
   plugin Download => (
-    url => 'http://ftp.gnu.org/gnu/gmp',
+    url => 'https://ftp.gnu.org/gnu/gmp',
     filter => qr/^gmp-.*\.tar\.bz2$/,
     version => qr/([0-9\.]+)/,
   );
