@@ -6,36 +6,40 @@ Alien package for the GNU Multiple Precision library.
 
 In your Build.PL:
 
-    use Module::Build;
-    use Alien::GMP;
-    my $builder = Module::Build->new(
-      ...
-      configure_requires => {
-        'Alien::GMP' => '0',
-        ...
-      },
-      extra_compiler_flags => Alien::GMP->cflags,
-      extra_linker_flags   => Alien::GMP->libs,
-      ...
-    );
-    
-    $build->create_build_script;
+```perl
+use Module::Build;
+use Alien::GMP;
+my $builder = Module::Build->new(
+  ...
+  configure_requires => {
+    'Alien::GMP' => '0',
+    ...
+  },
+  extra_compiler_flags => Alien::GMP->cflags,
+  extra_linker_flags   => Alien::GMP->libs,
+  ...
+);
+
+$build->create_build_script;
+```
 
 In your Makefile.PL:
 
-    use ExtUtils::MakeMaker;
-    use Config;
-    use Alien::GMP;
-    
-    WriteMakefile(
-      ...
-      CONFIGURE_REQUIRES => {
-        'Alien::GMP' => '0',
-      },
-      CCFLAGS => Alien::GMP->cflags . " $Config{ccflags}",
-      LIBS    => [ Alien::GMP->libs ],
-      ...
-    );
+```perl
+use ExtUtils::MakeMaker;
+use Config;
+use Alien::GMP;
+
+WriteMakefile(
+  ...
+  CONFIGURE_REQUIRES => {
+    'Alien::GMP' => '0',
+  },
+  CCFLAGS => Alien::GMP->cflags . " $Config{ccflags}",
+  LIBS    => [ Alien::GMP->libs ],
+  ...
+);
+```
 
 # DESCRIPTION
 
@@ -51,19 +55,21 @@ C++ compiler, or if your operating system vendor provides a GMP package without 
 files then it will not be available.  To use the C++ bindings, you can use the `alt` method
 to create a C++ instance of this GMP Alien.  For example:
 
-    use ExtUtils::MakeMaker;
-    use Config;
-    use Alien::GMP;
-    
-    WriteMakefile(
-      ...
-      CONFIGURE_REQUIRES => {
-        'Alien::GMP' => '1.06', # require version that provides C++ bindings
-      },
-      CCFLAGS => Alien::GMP->alt('gmpxx')->cflags . " $Config{ccflags}",
-      LIBS    => [ Alien::GMP->alt('gmpxx')->libs ],
-      ...
-    );
+```perl
+use ExtUtils::MakeMaker;
+use Config;
+use Alien::GMP;
+
+WriteMakefile(
+  ...
+  CONFIGURE_REQUIRES => {
+    'Alien::GMP' => '1.06', # require version that provides C++ bindings
+  },
+  CCFLAGS => Alien::GMP->alt('gmpxx')->cflags . " $Config{ccflags}",
+  LIBS    => [ Alien::GMP->alt('gmpxx')->libs ],
+  ...
+);
+```
 
 # Inline support
 
@@ -91,4 +97,6 @@ This software is Copyright (c) 2012-2018 by Richard Simões.
 
 This is free software, licensed under:
 
-    The GNU Lesser General Public License, Version 3, June 2007
+```
+The GNU Lesser General Public License, Version 3, June 2007
+```
