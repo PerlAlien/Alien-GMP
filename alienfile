@@ -17,6 +17,9 @@ EOM
 ) for ({ libs => '-lgmp', cflags => '' }, { libs => '-lgmp', cflags => '-I/usr/include/gmp' });
 
 share {
+
+  requires 'Alien::m4'    => '0.08';
+
   plugin Download => (
     url => 'https://ftp.gnu.org/gnu/gmp',
     filter => qr/^gmp-.*\.tar\.bz2$/,
