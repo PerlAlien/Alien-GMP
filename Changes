@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Share install requires Alien::m4 for build (gh#2)
 
 1.15      2020-02-21 01:03:41 -0500
   - Use https instead of http
