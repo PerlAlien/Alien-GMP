@@ -1,4 +1,4 @@
-# Alien::GMP [![Build Status](https://secure.travis-ci.org/Perl5-Alien/Alien-GMP.png)](http://travis-ci.org/Perl5-Alien/Alien-GMP)
+# Alien::GMP [![Build Status](https://travis-ci.org/PerlAlien/Alien-GMP.svg)](http://travis-ci.org/PerlAlien/Alien-GMP)
 
 Alien package for the GNU Multiple Precision library.
 
