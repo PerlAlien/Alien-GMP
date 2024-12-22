@@ -1,3 +1,6 @@
 /Alien-GMP-*
 .build
 *.swp
+/.build
+*.old
+*.orig
