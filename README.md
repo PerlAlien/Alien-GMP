@@ -1,4 +1,4 @@
-# Alien::GMP ![linux](https://github.com/PerlAlien/Alien-GMP/workflows/linux/badge.svg)
+# Alien::GMP ![static](https://github.com/PerlAlien/Alien-GMP/workflows/static/badge.svg) ![linux](https://github.com/PerlAlien/Alien-GMP/workflows/linux/badge.svg)
 
 Alien package for the GNU Multiple Precision library.
 
@@ -93,7 +93,7 @@ William N. Braswell, Jr. (WBRASWELL)
 
 # COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012-2018 by Richard Simões.
+This software is Copyright (c) 2012-2024 by Richard Simões.
 
 This is free software, licensed under:
 
